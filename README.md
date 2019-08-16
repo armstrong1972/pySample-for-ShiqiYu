@@ -1,11 +1,11 @@
 # pySample-for-ShiqiYu
 The DLL inferface &amp; python sample code base on new version of libfacedetection （https://github.com/ShiqiYu/libfacedetection ）by Shiqi.Yu.
 
-于仕琪 老师新版本人脸识别（https://github.com/ShiqiYu/libfacedetection)的DLL接口及Python语言案例。
+于仕琪 老师新版本人脸识别（https://github.com/ShiqiYu/libfacedetection )的DLL接口及Python语言案例。
 
 <b>Step1 : Create a Dll for proivide an interface to python</b>
-1) Create a C++ DLL project named "fd-shiqiyu" in VS2017
-2) Copy all files(*.h and *.cpp) from https://github.com/ShiqiYu/libfacedetection/tree/master/src to your projects
+1) Create a C++ DLL project and named "fd-shiqiyu" in VS2017
+2) Copy all files(*.h and *.cpp) from https://github.com/ShiqiYu/libfacedetection/tree/master/src to your project
 3) Create the "dll-interface.cpp" to export the function
 4) Compile the project to generate "fd-shiqiyu.dll"
 
