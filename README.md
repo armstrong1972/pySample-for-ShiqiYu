@@ -1,3 +1,16 @@
+# Update @ Oct 10 ，2019
+Profartssor Yu update new version. Change the mod from float to long. It's only 915K. すごい<br>
+"facedetectcnn-floatdata.cpp" change to "facedetectcnn-int8data.cpp"
+
+So , you have to change the C++ DLL project"
+1) Open the fd-shiqiyu.sln
+2) Remove "facedetectcnn-floatdata.cpp"
+3) Copy all files(*.h and *.cpp) from https://github.com/ShiqiYu/libfacedetection/tree/master/src to your project
+4) Add "facedetectcnn-int8data.cpp" into the project
+4) Recompile the project to generate "fd-shiqiyu_v2.dll"
+
+-------------------------------------------------------
+
 # pySample-for-ShiqiYu
 The DLL inferface &amp; python sample code base on new version of libfacedetection （https://github.com/ShiqiYu/libfacedetection ）by Shiqi.Yu.
 
