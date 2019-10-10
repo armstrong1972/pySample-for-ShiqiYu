@@ -31,7 +31,8 @@ st = w*3
 
 p_img = img.ctypes.data_as(POINTER(c_ubyte))
 
-dll = CDLL('./dlls/fd-shiqiyu.dll')
+#dll = CDLL('./dlls/fd-shiqiyu.dll')    # old version
+dll = CDLL('./dlls/fd-shiqiyu_v2.dll')
 dll.shiqi_fd.restype = POINTER(FaceResults)
 
 p_results = dll.shiqi_fd(p_img,w,h,st) 
